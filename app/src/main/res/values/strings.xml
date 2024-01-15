@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FormApp</string>
+    <string name="name">Full Name</string>
+    <string name="age">Age</string>
+    <string name="phone">Phone</string>
+    <string name="bio">Bio</string>
+    <string name="gender">Gender</string>
+    <string name="male">"Male"</string>
+    <string name="female">female</string>
+    <string name="skills">Skills</string>
+    <string name="skill1">Developer</string>
+    <string name="skill2">Designer</string>
+    <string name="skill3">Cyber security</string>
+    <string name="skill4">Networking</string>
+    <string name="other_skills">Other skills</string>
+    <string name="submit">SAVE</string>
+    <string name="show_all">Show all</string>
+    <string name="back">BACK</string>
+    <string name="head1">Registration Form</string>
+</resources>

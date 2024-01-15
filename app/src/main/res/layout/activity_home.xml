@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/userDataLayout"
+        android:layout_width="463dp"
+        android:layout_height="767dp"
+        android:orientation="vertical"
+        android:padding="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,VisualLintBounds">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginLeft="22dp"
+            android:textColor="@color/purple_500"
+            android:text="@string/head1"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nameEditTextText"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:visibility="visible"
+            android:layout_marginLeft="22dp"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:layout_marginLeft="22dp"
+            android:padding="2dp" />
+
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:hint="@string/age"
+            android:inputType="number"
+            android:layout_marginLeft="22dp"
+            android:padding="2dp" />
+
+        <EditText
+            android:id="@+id/bioEditText"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:hint="@string/bio"
+            android:inputType="textMultiLine"
+            android:padding="2dp"
+            android:layout_marginLeft="22dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="22dp"
+            android:text="@string/gender"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/maleCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/male" />
+
+
+            <CheckBox
+                android:id="@+id/femaleCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/female" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/purple_500"
+            android:text="@string/skills"
+            android:textSize="18sp"
+            android:layout_marginLeft="22dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <CheckBox
+                    android:id="@+id/skill1Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/skill1" />
+
+                <CheckBox
+                    android:id="@+id/skill2Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/skill2" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <CheckBox
+                    android:id="@+id/skill3Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/skill3" />
+
+                <CheckBox
+                    android:id="@+id/skill4Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/skill4" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/skillEditText"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:hint="@string/other_skills"
+            android:inputType="text"
+            android:layout_marginLeft="22dp"
+            tools:ignore="Autofill" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="30dp">
+
+            <Button
+                android:id="@+id/submitbtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/purple_500"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/gobtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/purple_500"
+                android:padding="5dp"
+                android:text="@string/show_all"
+                android:textColor="@color/white"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+<include layout="@layout/user_details"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
